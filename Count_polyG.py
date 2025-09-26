@@ -2,10 +2,10 @@ import os
 from Bio import SeqIO
 
 # Sequence to search for
-sequence_to_find = "GGGGGGGG"
+sequence_to_find = "GGGGGGGGGGGGGGG"
 
 # Output file
-output_file = "8G_read_counts.txt"
+output_file = "15G_read_counts.txt"
 
 # Open the output file for writing
 with open(output_file, "w") as output:
@@ -25,3 +25,4 @@ with open(output_file, "w") as output:
             print(f"Processed {filename}: {count} reads containing '{sequence_to_find}'")
 
 print(f"Results saved to {output_file}")
+
